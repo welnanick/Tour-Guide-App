@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tour Guide App</string>
+    <string name="category_museums">Museums</string>
+    <string name="category_restaurants">Food</string>
+    <string name="category_sports">Sports</string>
+    <string name="category_parks">Parks</string>
+</resources>
