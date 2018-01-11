@@ -1,35 +1,60 @@
 package com.nickwelna.tourguideapp;
 
-/**
- * Created by Nick on 1/8/2018.
- */
-
 public class Location {
 
-    private String name;
-    private String description;
+    private int name;
+    private int description;
     private int imageResourceId;
+    private boolean largeImage = false;
+    private int searchQuery;
 
-    public Location(String name, String description) {
+    public Location(int name, int description, int imageResourceId, int searchQuery) {
 
         this.name = name;
         this.description = description;
+        this.imageResourceId = imageResourceId;
+        this.searchQuery = searchQuery;
 
     }
 
-    public String getName() {
+    public Location(int name, int description, int imageResourceId, boolean largeImage, int searchQuery) {
+
+        this.name = name;
+        this.description = description;
+        this.imageResourceId = imageResourceId;
+        this.largeImage = largeImage;
+        this.searchQuery = searchQuery;
+
+    }
+
+    public int getName() {
+
         return name;
+
     }
 
-    public String getDescription() {
+    public int getDescription() {
+
         return description;
+
     }
 
-    public boolean wordHasLargeImage() {
-        return true;
+    public boolean hasLargeImage() {
+
+        return largeImage;
+
     }
 
     public int getImageResourceId() {
+
         return imageResourceId;
+
     }
+
+    public int getSearchQuery() {
+
+        return searchQuery;
+
+    }
+
 }

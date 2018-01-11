@@ -5,43 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-
     <ImageView
-        android:id="@+id/image"
-        android:layout_width="wrap_content"
+        android:id="@+id/largeImage"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:src="@drawable/ic_place_black_48dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        tools:src="@drawable/mears_park" />
 
     <RelativeLayout
-        android:id="@+id/word_layout"
         android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:layout_toEndOf="@id/image">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/largeImage">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            tools:src="@drawable/science_museum_logo" />
 
         <RelativeLayout
+            android:id="@+id/word_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true">
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/image">
 
             <TextView
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="bold"
                 android:textColor="#000000"
-                tools:text="Science Museum of Minnesota" />
+                android:textStyle="bold"
+                tools:text="@string/science_museum" />
 
             <TextView
                 android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/name"
+                android:textAppearance="?android:textAppearanceSmall"
                 android:textColor="#000000"
-                android:textAppearance="?android:textAppearanceMedium"
-                tools:text="Description" />
+                tools:text="@string/science_museum_description" />
+
         </RelativeLayout>
+
     </RelativeLayout>
 
 </RelativeLayout>

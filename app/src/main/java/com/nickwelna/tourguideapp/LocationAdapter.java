@@ -7,13 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
-
-/**
- * Created by Nick on 1/8/2018.
- */
 
 class LocationAdapter extends ArrayAdapter<Location> {
 
@@ -27,19 +24,36 @@ class LocationAdapter extends ArrayAdapter<Location> {
     @NonNull
     @Override
     public View getView(int position, @Nullable final View convertView, @NonNull final ViewGroup parent) {
+
         View listItemView = convertView;
         if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item, parent, false);
+
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+
         }
 
         final Location currentLocation = getItem(position);
 
         TextView name = listItemView.findViewById(R.id.name);
-        name.setText(currentLocation.getName());
+        name.setText(parent.getResources().getString(currentLocation.getName()));
 
         TextView description = listItemView.findViewById(R.id.description);
-        description.setText(currentLocation.getDescription());
+        description.setText(parent.getResources().getString(currentLocation.getDescription()));
+
+        ImageView image = listItemView.findViewById(R.id.image);
+
+        if (!currentLocation.hasLargeImage()) {
+
+            image.setImageResource(currentLocation.getImageResourceId());
+
+        } else {
+
+            image.setVisibility(View.GONE);
+            ImageView largeImage = listItemView.findViewById(R.id.largeImage);
+            largeImage.setImageResource(currentLocation.getImageResourceId());
+            largeImage.setVisibility(View.VISIBLE);
+
+        }
 
         return listItemView;
 

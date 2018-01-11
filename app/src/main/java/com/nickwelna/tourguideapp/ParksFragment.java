@@ -1,5 +1,7 @@
 package com.nickwelna.tourguideapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -11,14 +13,12 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Nick on 1/8/2018.
- */
-
 public class ParksFragment extends Fragment {
 
     public ParksFragment() {
+
         // Required empty public constructor
+
     }
 
 
@@ -29,32 +29,30 @@ public class ParksFragment extends Fragment {
 
         final List<Location> locations = new ArrayList<>();
 
-        locations.add(new Location("Mears Park", "Test 1"));
-        locations.add(new Location("Rice Park", "Test 2"));
+        locations.add(new Location(R.string.mears_park, R.string.mears_park_description, R.drawable.mears_park, true, R.string.mears_park_search_query));
+        locations.add(new Location(R.string.rice_park, R.string.rice_park_description, R.drawable.rice_park, true, R.string.rice_park_search_query));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
-        // adapter knows how to create list items for each item in the list.
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 
-        // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-        // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // word_list.xml file.
         ListView listView = rootView.findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 Location currentLocaton = locations.get(i);
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(view.getResources().getString(R.string.maps_url) + view.getResources().getString(currentLocaton.getSearchQuery())));
+                startActivity(intent);
+
             }
 
         });
 
         return rootView;
+
     }
 
 }

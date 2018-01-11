@@ -1,7 +1,38 @@
 <resources>
-    <string name="app_name">Tour Guide App</string>
+    <string name="app_name">St. Paul Tour Guide App</string>
     <string name="category_museums">Museums</string>
     <string name="category_restaurants">Food</string>
     <string name="category_sports">Sports</string>
     <string name="category_parks">Parks</string>
+    <string name="science_museum">Science Museum of Minnesota</string>
+    <string name="science_museum_description">The Science Museum of Minnesota makes science fun for all ages. Its 5 floors of exhibits are highly interactive and cover a wide variety of subjects, from the human body to how the weather works. With a rotating specialty exhibit, and a rotating selection of IMAX Omnitheater movies, you\'ll want to visit here often!</string>
+    <string name="science_museum_search_query">Science+Museum+of+Minnesota</string>
+    <string name="history_center">Minnesota History Center</string>
+    <string name="history_center_description">Home of the Minnesota Historical Society, the Minnesota History Center gives you a look into Minnesota\'s past and how it affects the present. With a core set of permanent exhibits that are interactive, as well as a rotating set, the History Center is a must stop for anyone interested in Minnesota\'s History</string>
+    <string name="history_center_search_query">Minnesota+History+Center</string>
+    <string name="childrens_museum">Minnesota Children\'s Museum</string>
+    <string name="childrens_museum_description">Recently renovated, expanded, and reopening in June 2017; the Children\'s museum is a museum just for kids! With 10 all new exhibits, kids will be engaged for hours as they participate in fun activities that include a Lazer Maze, a Carpet Skate Park, a green-screen climbing wall, and much more!</string>
+    <string name="childrens_museum_search_query">Minnesota+Children\'s+Museum+Saint+Paul</string>
+    <string name="cossetta">Cossetta Alimentari</string>
+    <string name="cossetta_description">Established in 1911, Cossetta is more than just a restaurant. You can grab a quick bite at the cafeteria-style Eatery and Pizzeria, head up to the third floor to Louis Ristorante &amp; Bar to meet friends and experience St. Paul\'s largest rooftop bar, eat homemade Italian dessert at the Pasticceria, or shop in the Italian Market for authentic Italian Cuisine to make at home.</string>
+    <string name="cossetta_search_query">Cossetta</string>
+    <string name="mickeys_diner">Mickey\'s Diner</string>
+    <string name="mickeys_diner_description">Open 24 hours a day, 365 days a year, Mickey\'s Diner is one of the most famous landmarks in St. Paul. Placed on the National Register of Historic Places in 1983, Mickey\'s Diner has been featured on the Food Network series Unwrapped, Roker on the Road, Rachel Rays\' Tasty Travels, and Alton Browns\' Feasting on Asphalt. It has also appeared in The Smithsonian, National Geographic, Sports Illustrated, Easy Rider, Playboy and Elle magazines. The Mighty Ducks I, II, III, Jingle All the Way and A Prairie Home Companion movies contain scenes that were shot on location. With an every-growing list of Celebrity visitors, Mickey\'s Diner is a must stop for anyone visiting.</string>
+    <string name="mickeys_diner_search_query">Mickey\'s+Diner</string>
+    <string name="kellys">Kelly\'s Depot Bar &amp; Grill</string>
+    <string name="kellys_description">Featured as one of the Best burger joints in the Twin Cities, Kelly\'s Depot Bar &amp; Grill is a great place to stop and grab a drink, chat with the always friendly staff, watch any local sports team when they\'re on the road, or all of the above! With a simple menu done right, no choice is a bad one at Kelly\'s.</string>
+    <string name="kellys_search_query">Kelly\'s+Depot+Bar+%26+Grill</string>
+    <string name="xcel_energy_center">Xcel Energy Center</string>
+    <string name="xcel_energy_center_description">Home of the Minnesota Wild, the Xcel Energy Center has a regularly rotating schedule of Hockey, Concerts, and other Events that you can go to. Only blocks away from many bars for pre or post event food and drinks, the Xcel Energy Center is always a fun place to go.</string>
+    <string name="xcel_energy_center_search_query">Xcel+Energy+Center</string>
+    <string name="chs_field">CHS Field</string>
+    <string name="chs_field_description">Home of the Saint Paul Saints Baseball team, CHS field is a fun place to watch Baseball. The Saints are always doing wacky things in-between innings to make the game fun for everyone, even those who don\'t like Baseball! If you\'re lucky you might even run into Co-Owner of the Saints, Bill Murray, who occasionally travels to Minnesota to watch the team play!</string>
+    <string name="chs_field_search_query">CHS+Field</string>
+    <string name="mears_park">Mears Park</string>
+    <string name="mears_park_description">Located a few blocks away from CHS field, Mears Park is a great place to go anytime. During the summer it hosts many events, including Music Festivals, a Food-Truck Festival, and weekly movies at night to name a few. Featuring a man-made stream running through the park, it is also a nice place to relax and eat lunch outside on a nice day.</string>
+    <string name="mears_park_search_query">Mears+Park</string>
+    <string name="rice_park">Rice Park</string>
+    <string name="rice_park_description">Blocks away from the Xcel Energy Center, Rice park is on of the most well known parks in St. Paul. During the winter it features a massive christmas tree with lights, as well as an outdoor ice rink with open skating (if you can brave the cold!). It also hosts many events during St. Paul\'s Winter Carnival.</string>
+    <string name="rice_park_search_query">Rice+Park</string>
+    <string name="maps_url">https://www.google.com/maps/search/?api=1&amp;query=</string>
 </resources>
